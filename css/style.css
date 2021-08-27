@@ -1,0 +1,98 @@
+.card-asset {
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 10px auto;
+  max-width: 90% !important;
+  position: relative;
+}
+.price-container {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: #c75af1; */
+  background-color: white;
+  border: 2px solid black;
+  /* box-shadow: 0px 0px 1px white; */
+}
+.logo_header {
+  object-fit: contain;
+  width: calc(100% - 100px);
+  max-height: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+main {
+  margin: 40px 0px;
+}
+.logo_footer {
+  object-fit: contain;
+  width: 200px;
+  max-height: 100px;
+}
+header {
+  background-color: #f3e9f1;
+  display: flex;
+  /* justify-content: center; */
+}
+
+body {
+  min-width: 280px;
+  height: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 70px;
+  background-color: #f3e9f1;
+}
+.footer-link {
+  width: 80%;
+}
+.footer-link > div {
+  max-width: 300px;
+}
+.footer-wrapper a {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  margin: 10px;
+  font-weight: 500;
+}
+.fab {
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+}
+.circle {
+  margin: 5px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid rgb(43, 41, 41);
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 750px) {
+  .footer-wrapper,
+  .link {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */

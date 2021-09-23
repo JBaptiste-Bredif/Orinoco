@@ -224,7 +224,7 @@ function builder(nounours) {
         btn.href = 'produit.html?nid=' + element._id;
         btn.appendChild(document.createTextNode("Plus d\'infos"));
         let btn_plus = document.createElement("i");
-        btn_plus.classList.add('fas', 'fa-plus-circle', 'ms-2', 'block');
+        btn_plus.classList.add('fas', 'fa-plus-circle', 'ms-2');
         btn.appendChild(btn_plus)
         body.appendChild(btn)
 

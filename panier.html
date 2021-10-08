@@ -26,76 +26,132 @@
     </header>
     <main class="center_flex">
       <div id="main-container" class="center_flex flex-column">
-        <h4>Récapitulatif de votre panier :</h4>
-        <div
-          id="flex-container"
-          class="center_flex flex-wrap h-100 w-100"
-        ></div>
+        <h5>Récapitulatif de votre panier :</h5>
+        <div id="flex-container" class="center_flex flex-wrap h-100 w-100">
+          <!-- Javascript build here -->
+        </div>
+      </div>
 
-        <!-- <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="..." class="img-fluid rounded-start" alt="..." />
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="form-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Vos informations
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
+            <div class="modal-body">
+              <form
+                id="formInfo"
+                action="#"
+                class="row g-3 needs-validation"
+                novalidate
+              >
+                <div class="col-md-12">
+                  <label for="validationMail" class="form-label"
+                    >Adresse Mail</label
+                  >
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      >@</span
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="validationMail"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      aria-describedby="inputGroupPrepend"
+                      name="email"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Rentrer une adresse mail valide
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label"
+                    >Prénom</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    name="surname"
+                    required
+                  />
+                  <div class="invalid-feedback">Champ vide !</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    name="name"
+                    required
+                  />
+                  <div class="invalid-feedback">Champ vide !</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label"
+                    >Adresse</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom03"
+                    name="adress"
+                    required
+                  />
+                  <div class="invalid-feedback">Champ vide !</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label"
+                    >Ville</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom03"
+                    name="city"
+                    required
+                  />
+                  <div class="invalid-feedback">Champ vide !</div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-around">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                  <button class="btn btn-primary" onclick="constructData()">
+                    Valider
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-        </div> -->
-        <!-- <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">Image</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Option</th>
-              <th scope="col">Quantité</th>
-              <th scope="col">Prix total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="center row">
-                <img
-                  class="test card-img-top border-bottom"
-                  src="http://localhost:3000/images/teddy_1.jpg"
-                  alt="Image de l'ours Norbert"
-                />
-              </th>
-              <td class="center">Norbert</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table> -->
+        </div>
       </div>
     </main>
     <footer>
       <div class="footer-wrapper">
-        <!-- <div class="footer-logo">
-            <img class="logo_footer" src="images/test.png" />
-          </div> -->
-
         <div class="footer-link d-flex justify-content-around flex-wrap">
           <div class="w-100 link d-flex justify-content-between">
             <a href="#"> FAQ</a>
